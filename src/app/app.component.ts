@@ -206,6 +206,7 @@ export class AppComponent implements OnInit {
 
   constructor(private ngxExtendedPdfViewerService: NgxExtendedPdfViewerService, public dialog: MatDialog) {}
   ngOnInit(): void {
+    console.log('RUNNNNNNNNNNNNNN OVER!')
     pdfDefaultOptions.externalLinkTarget = LinkTarget.BLANK;
   }
 
