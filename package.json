@@ -14,7 +14,8 @@
     "win-package": "ng b ngx-extended-pdf-viewer && rmdir dist /S && ng-packagr -p projects/ngx-extended-pdf-viewer/ng-package.json",
     "release": "npm run unix-package && cd dist/ngx-extended-pdf-viewer && npm publish && cd .. && cd .. && ./createTag.sh && node ./increase-version-number.js",
     "cypress": "./node_modules/.bin/cypress open",
-    "pre-commit": "npm run build"
+    "pre-commit": "npm run build",
+    "prepare": "npm run build"
   },
   "private": true,
   "dependencies": {
